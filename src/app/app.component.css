@@ -1,0 +1,78 @@
+#root {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .body {
+    user-select: none;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    background: #d7d8d9;
+  }
+  
+  .calculator {
+    width: 320px;
+    border: 4px solid black;
+    position: relative;
+    padding: 5px;
+    background: black;
+  }
+  
+  button {
+    height: 70px;
+    width: 80px;
+    color: black;
+    position: relative;
+    background: #f2a007;
+    cursor: default;
+    border: none;
+    font-size: 24px;
+    outline: 1px solid black;
+    font-family: "Source Sans Pro", serif;
+  }
+  
+  button:hover {
+    color: white;
+    outline: 0.01em solid white;
+    z-index: 3;
+  }
+  
+  .jumbo {
+    width: 160px;
+  }
+  
+  .formulaScreen {
+    min-height: 30px;
+    font-family: "Barlow";
+    font-size: 23px;
+    color: #f2b90f;
+    text-align: right;
+    vertical-align: text-top;
+    line-height: 25px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+  
+  .outputScreen {
+    font-size: 31px;
+    font-family: "Barlow";
+    color: white;
+    text-align: right;
+    line-height: 35px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .calculator {
+      transform: scale(0.8);
+    }
+  
+    button:hover {
+      outline: 0.05em solid white;
+    }
+  }
+  
